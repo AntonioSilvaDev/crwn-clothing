@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import './directory.styles.scss';
 import MenuItem from '../menu-item/menu-item.component'
@@ -48,7 +47,6 @@ class Directory extends React.Component{
     render() {
         return(
           <React.Fragment>
-            <Link to="/hats">Hats</Link>
             <div className='directory-menu'>
                 {this.state.sections.map(({ id, ...otherSectionProps }) => (
                     <MenuItem key={id} {...otherSectionProps} />
